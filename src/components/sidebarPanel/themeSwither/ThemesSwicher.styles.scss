@@ -1,0 +1,31 @@
+.themesSwitcher {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 6rem;
+
+  .track {
+    position: relative;
+    width: 7.6rem;
+    height: 2rem;
+    cursor: pointer;
+    background-color: var(--color-accent-100);
+    border-radius: 1rem;
+  }
+
+  .thumb {
+    position: absolute;
+    top: -3rem;
+    left: -2.5rem;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out 0s;
+  }
+
+  .darkThemeSwitcher {
+    transform: translateX(0px);
+  }
+
+  .lightThemeSwitcher {
+    color: darkorange;
+    transform: translateX(4.7rem);
+  }
+}

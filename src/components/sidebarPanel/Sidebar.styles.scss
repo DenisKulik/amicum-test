@@ -1,0 +1,19 @@
+.sidebar {
+  max-width: 66.2rem;
+  width: 100%;
+  padding: 3.2rem 4rem;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 4px 0 10px 0 #00000040;
+  transition: all 0.2s ease-in-out;
+}
+
+.lightThemeSidebar {
+  background-color: var(--color-light-300);
+  color: var(--color-dark-500);
+}
+
+.darkThemeSidebar {
+  background-color: var(--color-dark-300);
+  color: var(--color-light-300);
+}

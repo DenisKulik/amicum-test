@@ -1,0 +1,10 @@
+.exitLink {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+
+  .linkText {
+    font-size: var(--font-size-m);
+    line-height: var(--line-height-l);
+  }
+}

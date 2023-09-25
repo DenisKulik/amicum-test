@@ -1,7 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 
-import HomeView from "@/views/HomeView.vue";
+import SidebarPanel from "@/components/sidebarPanel/SidebarPanel.vue";
 
 Vue.use(VueRouter);
 
@@ -9,7 +9,7 @@ const routes = [
   {
     path: "/",
     name: "home",
-    component: HomeView,
+    component: SidebarPanel,
   },
 ];
 
