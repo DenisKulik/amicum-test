@@ -1,0 +1,37 @@
+<template>
+  <IconWrapper :color="color" :width="width" :height="height">
+    <svg
+      width="100%"
+      height="100%"
+      viewBox="0 0 133 106"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M119.7 0H13.3C5.985 0 0.0664999 5.9625 0.0664999 13.25L0 92.75C0 100.037 5.985 106 13.3 106H119.7C127.015 106 133 100.037 133 92.75V13.25C133 5.9625 127.015 0 119.7 0ZM119.7 26.5L66.5 59.625L13.3 26.5V13.25L66.5 46.375L119.7 13.25V26.5Z"
+        fill="currentColor"
+      />
+    </svg>
+  </IconWrapper>
+</template>
+
+<script>
+import IconWrapper from "@/assets/icons/IconWrapper.vue";
+
+export default {
+  components: {
+    IconWrapper,
+  },
+  props: {
+    color: String,
+    width: {
+      type: String,
+      required: true,
+    },
+    height: {
+      type: String,
+      required: true,
+    },
+  },
+};
+</script>

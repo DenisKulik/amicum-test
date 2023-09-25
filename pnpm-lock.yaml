@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@fontsource/montserrat':
+    specifier: ^5.0.8
+    version: 5.0.8
   core-js:
     specifier: ^3.8.3
     version: 3.32.2
@@ -1343,6 +1346,10 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /@fontsource/montserrat@5.0.8:
+    resolution: {integrity: sha512-bNj6wfiWXXbsxb2ffatjpX+GBv30cWZ1lwNXW9qTeX2FnzPomsGRV4HdPrf3TqyTiVqX6fLo80zrQcMi7r8+fA==}
+    dev: false
 
   /@hapi/hoek@9.3.0:
     resolution: {integrity: sha512-/c6rf4UJlmHlC9b5BaNvzAcFv7HZ2QHaV0D4/HNlBdvFnvQq8RI4kYdhyPCl7Xj+oWvTWQ8ujhqS53LIgAe6KQ==}
