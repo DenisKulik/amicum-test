@@ -1,4 +1,4 @@
-# amicum-test
+# Amicum-test
 
 ## Project setup
 ```
@@ -19,6 +19,3 @@ pnpm run build
 ```
 pnpm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
