@@ -2,15 +2,14 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1vw;
 
   &-item {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 28.1rem;
-    width: 100%;
-    padding: 3rem 6.8rem;
+    width: 14.64vw;
+    padding: 1.56vw 3.54vw;
     color: var(--color-light-500);
     text-align: center;
     background-color: var(--color-accent-100);
@@ -22,7 +21,7 @@
       font-size: var(--font-size-s);
       line-height: var(--line-height-m);
       font-weight: var(--font-weight-bold);
-      margin-bottom: 1.3rem;
+      margin-bottom: 0.68vw;
     }
 
     &:hover {

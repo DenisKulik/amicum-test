@@ -10,7 +10,7 @@ export default {
 <template>
   <router-link to="/login" class="exitLink">
     <span class="linkText">Выход</span>
-    <ExitIcon height="5.4rem" width="5.4rem" />
+    <ExitIcon height="2.8vw" width="2.8vw" />
   </router-link>
 </template>
 

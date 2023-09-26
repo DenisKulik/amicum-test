@@ -29,7 +29,7 @@ export default {
         :minValue="0"
         :maxValue="1"
       >
-        <div class="slot"><InstructIcon height="8.4rem" width="8.4rem" /></div>
+        <div class="slot"><InstructIcon height="4.35vw" width="4.35vw" /></div>
       </ProgressBar>
     </div>
     <div class="profile-statistics-item">
@@ -39,7 +39,7 @@ export default {
         :minValue="0"
         :maxValue="1"
       >
-        <div class="slot"><TestIcon height="8.4rem" width="8.4rem" /></div>
+        <div class="slot"><TestIcon height="4.35vw" width="4.35vw" /></div>
       </ProgressBar>
     </div>
     <div class="profile-statistics-item">

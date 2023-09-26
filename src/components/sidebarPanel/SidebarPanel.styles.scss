@@ -1,11 +1,11 @@
 .sidebar {
-  max-width: 66.2rem;
-  width: 100%;
-  padding: 3.2rem 4rem;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+  width: 34.5vw;
+  padding: 1.6vw 2vw;
+  border-top-right-radius: 1vw;
+  border-bottom-right-radius: 1vw;
   box-shadow: 4px 0 10px 0 #00000040;
   transition: all 0.2s ease-in-out;
+  z-index: 10;
 }
 
 .lightThemeSidebar {

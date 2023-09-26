@@ -1,21 +1,21 @@
 .themesSwitcher {
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 6rem;
+  margin-bottom: 3.13vw;
 
   .track {
     position: relative;
-    width: 7.6rem;
-    height: 2rem;
+    width: 3.96vw;
+    height: 1vw;
     cursor: pointer;
     background-color: var(--color-accent-100);
-    border-radius: 1rem;
+    border-radius: 0.5vw;
   }
 
   .thumb {
     position: absolute;
-    top: -3rem;
-    left: -2.5rem;
+    top: -1.56vw;
+    left: -1.3vw;
     cursor: pointer;
     transition: transform 0.2s ease-in-out 0s;
   }
@@ -26,6 +26,6 @@
 
   .lightThemeSwitcher {
     color: darkorange;
-    transform: translateX(4.7rem);
+    transform: translateX(2.5vw);
   }
 }

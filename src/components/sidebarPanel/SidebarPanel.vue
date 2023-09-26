@@ -31,6 +31,5 @@ export default {
 </template>
 
 <style scoped>
-@import "@/assets/styles/theme.scss";
 @import "./SidebarPanel.styles.scss";
 </style>

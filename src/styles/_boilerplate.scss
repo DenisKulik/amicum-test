@@ -1,13 +1,9 @@
 html {
   box-sizing: border-box;
-  font-size: 62.5%; // 1 rem = 10px
+  font-size: 100%;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  @media(max-width: 1200px) {
-    font-size: 56.25%; // 1 rem = 9px
-  }
 }
 
 *,

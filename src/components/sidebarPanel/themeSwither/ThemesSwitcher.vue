@@ -26,7 +26,7 @@ export default {
 <template>
   <div class="themesSwitcher">
     <div class="track" @click="toggleTheme">
-      <SunIcon :class="themeClasses" height="7.9rem" width="7.9rem" />
+      <SunIcon :class="themeClasses" height="4.11vw" width="4.11vw" />
     </div>
   </div>
 </template>

@@ -42,8 +42,8 @@ export default {
   <div class="progress-circle">
     <slot></slot>
     <svg
-      width="14.5rem"
-      height="14.5rem"
+      width="7.55vw"
+      height="7.55vw"
       viewBox="0 0 120 120"
       class="progress-circle-svg"
     >

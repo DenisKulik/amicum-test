@@ -1,0 +1,30 @@
+.home-page {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin-left: -1vw;
+  transition: all 0.2s ease-in-out;
+}
+
+.content-page {
+  flex: 1;
+  margin-left: -1vw;
+  padding: 2vw 4vw;
+  transition: all 0.2s ease-in-out;
+}
+
+.home-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  margin-bottom: 1vw;
+}
+
+.link-text {
+  font-size: var(--font-size-s);
+  line-height: var(--line-height-m);
+}
+
+.page-heading {
+  margin-bottom: 1vw;
+}
