@@ -21,6 +21,7 @@ export default {
 
 <template>
   <div :class="themeClasses">
+    <img class="logo" src="@/assets/img/logo.png" alt="logo" />
     <router-link to="/" class="home-link">
       <ExitIcon height="1.8vw" width="1.8vw" />
       <span class="link-text">Назад</span>

@@ -2,6 +2,7 @@
 import SunIcon from "@/assets/icons/components/SunIcon.vue";
 
 export default {
+  name: "ThemesSwitcher",
   components: { SunIcon },
   computed: {
     theme() {
@@ -10,8 +11,8 @@ export default {
     themeClasses() {
       return {
         thumb: true,
-        darkThemeSwitcher: this.theme === "dark",
-        lightThemeSwitcher: this.theme === "light",
+        "dark-theme-switcher": this.theme === "dark",
+        "light-theme-switcher": this.theme === "light",
       };
     },
   },
@@ -24,7 +25,7 @@ export default {
 </script>
 
 <template>
-  <div class="themesSwitcher">
+  <div class="themes-switcher">
     <div class="track" @click="toggleTheme">
       <SunIcon :class="themeClasses" height="4.11vw" width="4.11vw" />
     </div>

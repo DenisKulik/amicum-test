@@ -6,6 +6,7 @@ import WorkView from "@/views/WorkView.vue";
 import NotificationsView from "@/views/NotificationsView.vue";
 import StudyView from "@/views/StudyView.vue";
 import AchievementsView from "@/views/AchievementsView.vue";
+import LoginView from "@/views/LoginView.vue";
 
 Vue.use(VueRouter);
 
@@ -34,6 +35,11 @@ const routes = [
     path: "/achievements",
     name: "achievements",
     component: AchievementsView,
+  },
+  {
+    path: "/login",
+    name: "login",
+    component: LoginView,
   },
 ];
 

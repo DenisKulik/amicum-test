@@ -1,5 +1,6 @@
 <script>
 export default {
+  name: "TimeInfo",
   data() {
     return {
       currentDate: "",
@@ -8,7 +9,7 @@ export default {
   },
   created() {
     this.timer = setInterval(this.updateDateTime, 1000);
-    this.updateDateTime(); // Вызываем функцию один раз при создании компонента.
+    this.updateDateTime();
   },
   beforeDestroy() {
     clearInterval(this.timer);
@@ -39,7 +40,7 @@ export default {
 </script>
 
 <template>
-  <div class="timeInfo">
+  <div>
     <p>{{ currentDate }}</p>
     <p>{{ currentTime }}</p>
   </div>

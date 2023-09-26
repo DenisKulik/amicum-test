@@ -20,7 +20,10 @@ export default {
 </script>
 
 <template>
-  <div :class="themeClasses"><HomeMenu /></div>
+  <div :class="themeClasses">
+    <img class="logo" src="@/assets/img/logo.png" alt="logo" />
+    <HomeMenu />
+  </div>
 </template>
 
 <style scoped>

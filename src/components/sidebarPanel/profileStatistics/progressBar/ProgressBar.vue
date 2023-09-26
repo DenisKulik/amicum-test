@@ -3,23 +3,31 @@ export default {
   name: "ProgressBar",
   props: {
     currentValue: {
-      type: Number,
+      validator: function (value) {
+        return (
+          value === null ||
+          typeof value === "number" ||
+          typeof value === "boolean"
+        );
+      },
       required: true,
     },
     minValue: {
       type: Number,
-      required: true,
       default: 0,
     },
     maxValue: {
       type: Number,
-      required: true,
       default: 100,
+    },
+    type: {
+      type: String,
     },
   },
   computed: {
     percent() {
-      if (this.minValue === 0 && this.maxValue === 1) return 100;
+      if (this.type !== "tests" && this.type !== "certification") return 100;
+      if (this.type === "certification" && this.currentValue > 365) return 100;
 
       return (
         ((this.currentValue - this.minValue) /
@@ -28,11 +36,24 @@ export default {
       );
     },
     color() {
-      if (this.percent === 100 && this.currentValue === 0) {
-        return "color-orange-100";
+      if (this.type === "tests") {
+        return "color-green-100";
       }
 
-      return this.percent > 25 ? "color-green-100" : "color-orange-100";
+      if (this.type === "certification") {
+        return this.currentValue < 30 ? "color-orange-100" : "color-green-100";
+      }
+
+      switch (this.currentValue) {
+        case true:
+          return "color-green-100";
+        case false: {
+          return "color-orange-100";
+        }
+        default: {
+          return "color-dark-300";
+        }
+      }
     },
   },
 };

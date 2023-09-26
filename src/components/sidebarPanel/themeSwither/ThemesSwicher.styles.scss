@@ -1,4 +1,4 @@
-.themesSwitcher {
+.themes-switcher {
   display: flex;
   justify-content: flex-end;
   margin-bottom: 3.13vw;
@@ -20,11 +20,11 @@
     transition: transform 0.2s ease-in-out 0s;
   }
 
-  .darkThemeSwitcher {
+  .dark-theme-switcher {
     transform: translateX(0px);
   }
 
-  .lightThemeSwitcher {
+  .light-theme-switcher {
     color: darkorange;
     transform: translateX(2.5vw);
   }

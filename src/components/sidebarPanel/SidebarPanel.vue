@@ -5,6 +5,7 @@ import ProfileCard from "@/components/sidebarPanel/profileCard/ProfileCard.vue";
 import ProfileStatistics from "@/components/sidebarPanel/profileStatistics/ProfileStatistics.vue";
 
 export default {
+  name: "SidebarPanel",
   components: { ProfileStatistics, ProfileCard, ThemesSwitcher, SidebarHeader },
   computed: {
     theme() {
@@ -13,8 +14,8 @@ export default {
     themeClasses() {
       return {
         sidebar: true,
-        darkThemeSidebar: this.theme === "dark",
-        lightThemeSidebar: this.theme === "light",
+        "dark-theme-sidebar": this.theme === "dark",
+        "light-theme-sidebar": this.theme === "light",
       };
     },
   },

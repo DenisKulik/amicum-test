@@ -11,6 +11,7 @@ export default {
         isSuccessBriefing: true,
         isSuccessExaminer: true,
         successTestsCount: 122,
+        totalTestsCount: 200,
         daysBeforeCertification: 1825,
         notificationCount: 2,
       },
@@ -23,6 +24,7 @@ export default {
         isSuccessBriefing: false,
         isSuccessExaminer: false,
         successTestsCount: 60,
+        totalTestsCount: 80,
         daysBeforeCertification: 365,
         notificationCount: 1,
       },
@@ -35,11 +37,30 @@ export default {
         isSuccessBriefing: true,
         isSuccessExaminer: false,
         successTestsCount: 80,
-        daysBeforeCertification: 120,
+        totalTestsCount: 80,
+        daysBeforeCertification: 25,
+        notificationCount: 0,
+      },
+      {
+        id: 4,
+        name: "Неизвестно",
+        birthdate: "Неизвестно",
+        report: "Неизвестно",
+        position: "Неизвестно",
+        isSuccessBriefing: null,
+        isSuccessExaminer: null,
+        successTestsCount: 0,
+        totalTestsCount: 40,
+        daysBeforeCertification: 0,
         notificationCount: 0,
       },
     ],
-    currentProfile: 0, // change index(0-2) to display a different profile
+    currentProfile: 0, // change index to display a different profile
+  },
+  mutations: {
+    changeCurrentProfile(state, profileIndex) {
+      state.currentProfile = profileIndex;
+    },
   },
   getters: {
     allProfiles(state) {

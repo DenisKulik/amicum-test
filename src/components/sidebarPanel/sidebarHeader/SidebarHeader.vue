@@ -1,8 +1,9 @@
 <script>
 import TimeInfo from "@/components/sidebarPanel/sidebarHeader/timeInfo/TimeInfo.vue";
-import ExitLink from "@/components/sidebarPanel/sidebarHeader/exitLink/ExitLink.vue";
+import ExitLink from "@/components/sidebarPanel/sidebarHeader/exitButton/ExitButton.vue";
 
 export default {
+  name: "SidebarHeader",
   components: {
     ExitLink,
     TimeInfo,
@@ -11,7 +12,7 @@ export default {
 </script>
 
 <template>
-  <div class="sidebarHeader">
+  <div class="sidebar-header">
     <TimeInfo />
     <ExitLink />
   </div>

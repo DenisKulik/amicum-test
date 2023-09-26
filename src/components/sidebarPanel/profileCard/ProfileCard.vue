@@ -1,5 +1,6 @@
 <script>
 export default {
+  name: "ProfileCard",
   computed: {
     profileIndex() {
       return this.$store.getters.currentProfile;
@@ -12,7 +13,7 @@ export default {
 </script>
 
 <template>
-  <div class="profileCard">
+  <div class="profile-card">
     <h2 class="name">{{ profile.name }}</h2>
     <p class="birthdate">{{ profile.birthdate }}</p>
     <p class="report">{{ profile.report }}</p>
@@ -21,5 +22,5 @@ export default {
 </template>
 
 <style scoped>
-@import "./ProfileCard.styles.scss";
+@import "ProfileCard.styles.scss";
 </style>

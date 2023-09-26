@@ -10,9 +10,5 @@ import SidebarPanel from "@/components/sidebarPanel/SidebarPanel.vue";
 </template>
 
 <style>
-#app.app-container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: space-between;
-}
+@import "App.styles.scss";
 </style>
