@@ -1,0 +1,42 @@
+.progress {
+  &-circle {
+    position: relative;
+    margin-bottom: 20px;
+    width: 120px;
+    height: 120px;
+
+    .slot {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      text-align: center;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+    }
+
+    &-svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-90deg);
+    }
+
+    &-percent {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      top: 0;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    &-line {
+      stroke-dasharray: 100;
+      transition: 0.5s;
+    }
+  }
+}
