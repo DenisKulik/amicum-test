@@ -26,11 +26,27 @@ export default {
         daysBeforeCertification: 365,
         notificationCount: 1,
       },
+      {
+        id: 3,
+        name: "Петров Алексей Васильевич",
+        birthdate: "15.09.1988",
+        report: "Таб №: ГОКИ 0002",
+        position: "Главный инженер",
+        isSuccessBriefing: true,
+        isSuccessExaminer: false,
+        successTestsCount: 80,
+        daysBeforeCertification: 120,
+        notificationCount: 0,
+      },
     ],
+    currentProfile: 0, // change index(0-2) to display a different profile
   },
   getters: {
-    currentProfiles(state) {
+    allProfiles(state) {
       return state.profiles;
+    },
+    currentProfile(state) {
+      return state.currentProfile;
     },
   },
 };

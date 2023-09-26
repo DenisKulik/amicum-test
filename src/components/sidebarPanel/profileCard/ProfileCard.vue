@@ -1,8 +1,11 @@
 <script>
 export default {
   computed: {
+    profileIndex() {
+      return this.$store.getters.currentProfile;
+    },
     profile() {
-      return this.$store.getters.currentProfiles[0];
+      return this.$store.getters.allProfiles[this.profileIndex];
     },
   },
 };

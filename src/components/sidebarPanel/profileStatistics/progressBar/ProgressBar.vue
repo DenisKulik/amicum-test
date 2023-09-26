@@ -19,6 +19,8 @@ export default {
   },
   computed: {
     percent() {
+      if (this.minValue === 0 && this.maxValue === 1) return 100;
+
       return (
         ((this.currentValue - this.minValue) /
           (this.maxValue - this.minValue)) *
@@ -26,7 +28,11 @@ export default {
       );
     },
     color() {
-      return this.percent > 15 ? "color-green-100" : "color-orange-100";
+      if (this.percent === 100 && this.currentValue === 0) {
+        return "color-orange-100";
+      }
+
+      return this.percent > 25 ? "color-green-100" : "color-orange-100";
     },
   },
 };
@@ -36,8 +42,8 @@ export default {
   <div class="progress-circle">
     <slot></slot>
     <svg
-      width="120"
-      height="120"
+      width="14.5rem"
+      height="14.5rem"
       viewBox="0 0 120 120"
       class="progress-circle-svg"
     >
