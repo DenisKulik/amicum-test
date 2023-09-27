@@ -36,24 +36,18 @@ export default {
       );
     },
     color() {
-      if (this.type === "tests") {
+      if (
+        this.type === "tests" ||
+        (this.type === "certification" && this.currentValue >= 30)
+      ) {
         return "color-green-100";
       }
 
-      if (this.type === "certification") {
-        return this.currentValue < 30 ? "color-orange-100" : "color-green-100";
+      if (this.type === "certification" && this.currentValue < 30) {
+        return "color-orange-100";
       }
 
-      switch (this.currentValue) {
-        case true:
-          return "color-green-100";
-        case false: {
-          return "color-orange-100";
-        }
-        default: {
-          return "color-dark-300";
-        }
-      }
+      return this.currentValue ? "color-green-100" : "color-orange-100";
     },
   },
 };

@@ -44,7 +44,7 @@ export default {
         :maxValue="profile.totalTestsCount"
       >
         <div class="slot">
-          <h4>{{ profile.successTestsCount }}/{{ profile.totalTestsCount }}</h4>
+          <h4>{{ profile.successTestsCount }}</h4>
         </div>
       </ProgressBar>
     </div>
