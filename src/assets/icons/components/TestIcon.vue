@@ -1,3 +1,25 @@
+<script>
+import IconWrapper from "@/assets/icons/IconWrapper.vue";
+
+export default {
+  name: "TestIcon",
+  components: {
+    IconWrapper,
+  },
+  props: {
+    color: String,
+    width: {
+      type: String,
+      required: true,
+    },
+    height: {
+      type: String,
+      required: true,
+    },
+  },
+};
+</script>
+
 <template>
   <IconWrapper :color="color" :width="width" :height="height">
     <svg
@@ -82,24 +104,3 @@
       </g></svg
   ></IconWrapper>
 </template>
-
-<script>
-import IconWrapper from "@/assets/icons/IconWrapper.vue";
-
-export default {
-  components: {
-    IconWrapper,
-  },
-  props: {
-    color: String,
-    width: {
-      type: String,
-      required: true,
-    },
-    height: {
-      type: String,
-      required: true,
-    },
-  },
-};
-</script>
