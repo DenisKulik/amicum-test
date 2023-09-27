@@ -1,3 +1,20 @@
+<script>
+export default {
+  name: "IconWrapper",
+  props: {
+    color: String,
+    width: {
+      type: String,
+      required: true,
+    },
+    height: {
+      type: String,
+      required: true,
+    },
+  },
+};
+</script>
+
 <template>
   <span
     role="img"
@@ -13,19 +30,3 @@
     <slot></slot>
   </span>
 </template>
-
-<script>
-export default {
-  props: {
-    color: String,
-    width: {
-      type: String,
-      required: true,
-    },
-    height: {
-      type: String,
-      required: true,
-    },
-  },
-};
-</script>
