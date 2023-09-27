@@ -44,6 +44,7 @@ export default {
         return this.currentValue < 30 ? "color-orange-100" : "color-green-100";
       }
 
+      // briefing/examiner cases
       switch (this.currentValue) {
         case true:
           return "color-green-100";
